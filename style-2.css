@@ -1,0 +1,30 @@
+#lancer {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+}
+#lancement {
+    overflow: hidden;
+}
+
+.genki-dama-lancer {
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 1000px;
+    width: 1000px;
+    perspective: 1000px;
+    background: radial-gradient(#fff 10%, #2994f2 70%);
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 50px #2994f2;
+    animation: lancer 10s ease-in forwards;
+}
+
+@keyframes lancer {
+    100% {
+        top: 160%;
+        left: -10%;
+    }
+}
